@@ -25,9 +25,9 @@ Individual deadlines and flow to be notified later<br>
 All Subtasks are compulsory</strong></p>
 <h1 id="problem-statement---design-a-system-architecture-of-an-unmanned-aerial-vehicle.">Problem Statement - Design a System Architecture of an Unmanned Aerial Vehicle.</h1>
 <p><img src="https://i.pinimg.com/originals/d2/9b/5b/d29b5bec682f9f0e608fd63c999609a2.gif" alt="Test Image 1"></p>
-<h4><div class="b">You are tasked with building the system architecture of a multirotor. It has to be capable of carrying an Autopilot (flight controller), a Telemetry Radio, a GPS and any other devices you deem fit. The first step is to make a small test drone in which the flight controller, radios and software is checked. This vehicle has to be capable of sustaining a 20 min flight and reach a maximum height of 140 feet. Assume the mechanical assembly to be fit and robust.</div></h4>
+<h4><div class="b">You are tasked with building the system architecture of a multirotor. It has to be capable of carrying an Autopilot (flight controller), a Telemetry Radio, a GPS and any other devices you deem fit. The first step is to make a small test drone in which the flight controller, radios and software become checked. This vehicle is based upon the S550 hexacopter frame and has to be capable of sustaining atleast 10 mins of  flight and reach a maximum height of 120 feet. Assume the mechanical assembly to be fit and robust.</div></h4>
 <h3 id="submissions-and-design-rationale">Submissions and Design Rationale:</h3>
-<p><strong>Submission - 1) 
+<p><strong>Submission 1) 
 A flowchart depicting the system architecture of the test multirotor (eg. given). To be submitted as a PDF. Suitable templates may be used.</strong></p>
 
 <dt><img src="https://www.researchgate.net/profile/Andrew-Fletcher-4/publication/281852835/figure/fig14/AS:668448657006601@1536381987407/System-architecture-for-the-fixed-wing-UAV-with-dust-sensor.png " alt="Test Image 1" style="width:380px;height:264px;" class="center"></dt>
@@ -47,18 +47,19 @@ lables.</li>
 <li>Out of Stock components not allowed.</li>
 </ul>
 <h2>Final Drone:</h2>
-<div class="b">Now that the test drone has performed successfully, you are tasked with making a power supply for the real drone.</div>
-<p><strong>Submission - 3) Power Distribution Board for the Motors, Autopilot and Telemetry radio. The board is to be designed around the TI TPS5431 buck converter ICs (<a href="https://www.ti.com/product/TPS5431">Information</a>) to power the autopliot and radio.</strong></p>
+<h4><div class="b">Now that the test drone has performed successfully, you are tasked with making a power supply for the real drone. Power architectures on a drone are very sophisticated systems, since there are no ways to debug mid operation and the most minute of mistakes can cause the worst accidents mid flight. Your team has decided to use the XOAR TITAN T4008 KV320 motors.</div></h4>
+<p><strong>Submission - 3) Power Distribution Board for the Motors, Autopilot and Telemetry radio. The board is to be designed around the TI TPS5450 buck converter ICs (<a href="https://www.ti.com/lit/ds/symlink/tps5450.pdf">Information</a>) to power the autopliot and radio.</strong></p>
 <p><img src="https://www.ti.com/content/dam/ticom/images/products/package/d/dda0008j.png:small" alt="Test Image 1" style="width:215px;height:122px;"></p>
 <p><strong>To be submitted as a PCB in KiCAD or EAGLE( schematic and board layout) along with Bill of Materials (in excel format).</strong></p>
 <p><strong>Design Requirements</strong></p>
 <ul>
 <li>The PCB should be capable of handling <strong>100-150A</strong> continuously.</li>
+<li>The board should be able to power six motors.</li>
 <li>The <strong>high current path</strong> (to motors) and <strong>low current paths</strong> (to autopilot, radio etc) should be as isolated from each other as possible.</li>
 <li>The motors and the input to the buck regulator should be at the same voltage.</li>
 <li>Proper grounding techniques to be used.</li>
 <li>A current sensor and voltage sensor capable of measuring <strong>maximum current and voltage</strong> to be included.</li>
-<li>Compatible <strong>Connectors and Cables</strong> to be identified for each piece of hardware.</li>
+<li>Compatible <strong>Connectors and Cables(if needed)</strong> to be identified for each piece of hardware.</li>
 </ul>
 </div>
 </body>
